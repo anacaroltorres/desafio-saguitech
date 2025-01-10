@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emissão de Nota Fiscal de Serviço</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="titulo-principal">Emissão de Nota Fiscal de Serviço</h1>
+
+      <label for="valorVenda">Valor da Venda:</label>
+      <input
+        type="number"
+        id="valorVenda"
+        placeholder="Digite o valor da venda"
+      />
+
+      <label for="itens">Itens Vendidos (separados por vírgula):</label>
+      <input type="text" id="itens" placeholder="Digite os itens vendidos" />
+
+      <label for="irpf">Porcentagem do Imposto (IRPF):</label>
+      <input
+        type="number"
+        id="irpf"
+        placeholder="Digite a porcentagem do IRPF"
+      />
+
+      <label for="pis">Porcentagem do Imposto (PIS):</label>
+      <input type="number" id="pis" placeholder="Digite a porcentagem do PIS" />
+
+      <label for="cofins">Porcentagem do Imposto (COFINS):</label>
+      <input
+        type="number"
+        id="cofins"
+        placeholder="Digite a porcentagem do COFINS"
+      />
+
+      <label for="inss">Porcentagem do Imposto (INSS):</label>
+      <input
+        type="number"
+        id="inss"
+        placeholder="Digite a porcentagem do INSS"
+      />
+
+      <label for="issqn">Porcentagem do Imposto (ISSQN):</label>
+      <input
+        type="number"
+        id="issqn"
+        placeholder="Digite a porcentagem do ISSQN"
+      />
+
+      <button onclick="emitirNotaFiscal()">Emitir Nota Fiscal</button>
+
+      <div class="result" id="result" style="display: none">
+        <h2 class="titulo-nfgerada">Nota Fiscal Gerada</h2>
+        <div id="notaFiscal"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
